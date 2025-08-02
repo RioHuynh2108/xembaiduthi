@@ -10,41 +10,43 @@
       padding: 0;
       font-family: Arial, sans-serif;
       background-image: url('anhnen4.png');
-      background-size: contain; /* Hiển thị toàn bộ ảnh */
+      background-size: contain;
       background-repeat: no-repeat;
       background-position: top center;
       background-color: black;
       min-height: 100vh;
       display: flex;
-      flex-direction: row;
-      justify-content: flex-end;
-      align-items: flex-end;
+      justify-content: center;
+      align-items: center; /* Đẩy phần nút lên giữa màn hình */
+      flex-direction: column;
     }
 
     .menu-vertical {
       display: flex;
-      flex-direction: column;
-      gap: 5px;
-      margin-right: 600px;
-      margin-bottom: 200px;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center;
       background-color: transparent;
       padding: 20px;
       border-radius: 10px;
     }
 
     .menu-vertical button {
-      padding: 10px 20px;
-      font-size: 1rem;
+      width: 60px;
+      height: 40px;
+      font-size: 0.8rem;
       background-color: #FFD700;
-      color: black;
+      color: #8B0000; /* Màu đỏ đô */
+      font-weight: bold; /* In đậm */
       border: none;
-      border-radius: 8px;
+      border-radius: 6px;
       cursor: pointer;
-      transition: transform 0.2s;
+      transition: transform 0.2s, background-color 0.2s;
     }
 
     .menu-vertical button:hover {
-      transform: scale(1.05);
+      transform: scale(1.1);
       background-color: #ffe45e;
     }
 
@@ -58,26 +60,25 @@
       color: white;
     }
 
-    /* MOBILE RESPONSIVE */
     @media (max-width: 768px) {
       body {
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
         background-size: contain;
+        align-items: center;
+        justify-content: flex-start;
       }
 
       .menu-vertical {
-        flex-direction: column;
-        align-items: center;
-        margin: 450px 0 20px 0; /* Đẩy menu xuống dưới */
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 60px 0;
         gap: 10px;
-        margin-right: 0;
       }
 
       .menu-vertical button {
-        width: 80%;
-        margin: 5px 0;
+        width: 70px;
+        height: 40px;
+        font-size: 0.75rem;
       }
     }
   </style>
