@@ -10,7 +10,7 @@
       padding: 0;
       font-family: Arial, sans-serif;
       background-image: url('anhnen4.png');
-      background-size: contain; /* Giúp hiển thị toàn bộ ảnh */
+      background-size: contain; /* Hiển thị toàn bộ ảnh */
       background-repeat: no-repeat;
       background-position: top center;
       background-color: black;
@@ -18,7 +18,7 @@
       display: flex;
       flex-direction: row;
       justify-content: flex-end;
-      align-items: flex-end; /* Đẩy menu xuống dưới */
+      align-items: flex-end;
     }
 
     .menu-vertical {
@@ -26,7 +26,7 @@
       flex-direction: column;
       gap: 5px;
       margin-right: 600px;
-      margin-bottom: 200px; /* Thay vì margin-top */
+      margin-bottom: 200px;
       background-color: transparent;
       padding: 20px;
       border-radius: 10px;
@@ -58,39 +58,26 @@
       color: white;
     }
 
+    /* MOBILE RESPONSIVE */
     @media (max-width: 768px) {
-  body {
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    background-size: contain; /* để ảnh nền không bị crop */
-  }
-
-  .menu-vertical {
-    margin: 20px 0;
-    align-items: center;
-  }
-
-  .menu-vertical button {
-    width: 80%;
-    margin: 8px 0;
-  }
-}
-
+      body {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        background-size: contain;
+      }
 
       .menu-vertical {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        margin: 20px 0;
+        flex-direction: column;
+        align-items: center;
+        margin: 450px 0 20px 0; /* Đẩy menu xuống dưới */
         gap: 10px;
         margin-right: 0;
-        margin-bottom: 0;
       }
 
       .menu-vertical button {
-        width: 45%;
-        margin: 5px;
+        width: 80%;
+        margin: 5px 0;
       }
     }
   </style>
