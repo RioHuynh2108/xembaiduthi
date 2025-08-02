@@ -7,7 +7,7 @@
 
 Đây là bài dự thi tham gia cuộc thi "Tìm hiểu Luật Dữ liệu trong Công an nhân dân năm 2025", được trình bày dưới dạng phần mềm trình chiếu với giao diện trực quan, sáng tạo.
 
-🔗 **[Xem bài trình chiếu tại đây](./xembaiduthi.html)**  
+🔗 **[Xem bài trình chiếu tại đây](./xembaiduthi.html)**  *
 *(Click để mở file HTML trong trình duyệt)*
 
 ---
