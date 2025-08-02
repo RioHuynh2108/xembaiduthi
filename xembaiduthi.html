@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bài Dự Thi</title>
   <style>
     body {
       margin: 0;
@@ -58,13 +59,24 @@
     }
 
     @media (max-width: 768px) {
-      body {
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-        background-size: contain;
-        background-position: top center;
-      }
+  body {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-size: contain; /* để ảnh nền không bị crop */
+  }
+
+  .menu-vertical {
+    margin: 20px 0;
+    align-items: center;
+  }
+
+  .menu-vertical button {
+    width: 80%;
+    margin: 8px 0;
+  }
+}
+
 
       .menu-vertical {
         flex-direction: row;
@@ -99,7 +111,7 @@
 
   <script>
     function moQuyen1() {
-      window.open('https://drive.google.com/file/d/1Xxh3G-BFcPzr-l15TbTPEsN8R4y0GxcC/view?usp=drive_link', '_blank');
+      window.open('https://online.fliphtml5.com/jkhsr/dpdx/#p=14', '_blank');
     }
 
     function showContent(id) {
@@ -110,4 +122,3 @@
   </script>
 </body>
 </html>
-
