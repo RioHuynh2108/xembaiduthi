@@ -3,6 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <style>
     body {
       margin: 0;
       padding: 0;
@@ -18,17 +20,16 @@
       align-items: center;
     }
 
-   .menu-vertical {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  margin-right: 400px;
-  margin-top: 300px; /* Thêm dòng này */
-  background-color: transparent;
-  padding: 20px;
-  border-radius: 10px;
-}
-
+    .menu-vertical {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      margin-right: 400px;
+      margin-top: 300px; /* Thêm dòng này */
+      background-color: transparent;
+      padding: 20px;
+      border-radius: 10px;
+    }
 
     .menu-vertical button {
       padding: 10px 20px;
