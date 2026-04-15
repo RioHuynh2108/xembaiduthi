@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bài Dự Thi</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-image: url('anhnen.jpg');
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: top center;
+      background-color: black;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: bottom; /* Đẩy phần nút lên giữa màn hình */
+      flex-direction: column;
+    }
+
+    .menu-vertical {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center;
+      background-color: transparent;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .menu-vertical button {
+      width: 60px;
+      height: 40px;
+      font-size: 0.8rem;
+      background-color: #FFD700;
+      color: #8B0000; /* Màu đỏ đô */
+      font-weight: bold; /* In đậm */
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: transform 0.2s, background-color 0.2s;
+    }
+
+    .menu-vertical button:hover {
+      transform: scale(1.1);
+      background-color: #ffe45e;
+    }
+
+    .content {
+      display: none;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 90%;
+      margin: 10px auto;
+      color: white;
+    }
+
+ @media (max-width: 768px) {
+  html, body {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Đẩy nội dung xuống dưới */
+    align-items: center;       /* Căn giữa ngang */
+    background-size: contain;
+  }
+
+  .menu-vertical {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px; /* Cách đáy màn hình một chút */
+  }
+
+  .menu-vertical button {
+    width: 70px;
+    height: 40px;
+    font-size: 0.75rem;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <div class="menu-vertical">
+    <button onclick="moQuyen1()">Quyển 1</button>
+     <button onclick="moQuyen2()">Quyển 2</button>
+     <button onclick="moQuyen3()">Quyển 3</button>
+  </div>
+  <script>
+    function moQuyen1() {
+      window.open('https://drive.google.com/file/d/1Ja9H357DRP2tj7GdE0m6bn5hHohU1EOz/view?usp=drive_link', '_blank');
+    }
+
+    function showContent(id) {
+      const contents = document.querySelectorAll('.content');
+      contents.forEach(c => c.style.display = 'none');
+      document.getElementById(id).style.display = 'block';
+    }
+  </script>
+
+    <script>
+    function moQuyen2() {
+      window.open('https://drive.google.com/file/d/1VqBZULeApiJhZe689yeTPWhOzBoqWL4g/view?usp=drive_link', '_blank');
+    }
+
+    function showContent(id) {
+      const contents = document.querySelectorAll('.content');
+      contents.forEach(c => c.style.display = 'none');
+      document.getElementById(id).style.display = 'block';
+    }
+  </script>
+
+    <script>
+    function moQuyen3() {
+      window.open('https://drive.google.com/file/d/1u2jCscEXWO_5PD4IaIkgjErfNc9lQJJD/view?usp=drive_link', '_blank');
+    }
+
+    function showContent(id) {
+      const contents = document.querySelectorAll('.content');
+      contents.forEach(c => c.style.display = 'none');
+      document.getElementById(id).style.display = 'block';
+    }
+  </script>
+
+    
+</body>
+</html>
+
+
+
+
