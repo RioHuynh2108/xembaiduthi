@@ -9,7 +9,7 @@
       margin: 0;
       padding: 0;
       font-family: Arial, sans-serif;
-      background-image: url('anhnen4.png');
+      background-image: url('anhnen.jpg');
       background-size: contain;
       background-repeat: no-repeat;
       background-position: top center;
@@ -17,7 +17,7 @@
       min-height: 100vh;
       display: flex;
       justify-content: center;
-      align-items: center; /* Đẩy phần nút lên giữa màn hình */
+      align-items: bottom; /* Đẩy phần nút lên giữa màn hình */
       flex-direction: column;
     }
 
@@ -76,7 +76,7 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
-    margin-bottom: 430px; /* Cách đáy màn hình một chút */
+    margin-bottom: 30px; /* Cách đáy màn hình một chút */
   }
 
   .menu-vertical button {
@@ -93,12 +93,10 @@
     <button onclick="moQuyen1()">Quyển 1</button>
      <button onclick="moQuyen2()">Quyển 2</button>
      <button onclick="moQuyen3()">Quyển 3</button>
-     <button onclick="moQuyen4()">Quyển 4</button>
-     <button onclick="moQuyen5()">Quyển 5</button>
   </div>
   <script>
     function moQuyen1() {
-      window.open('https://online.fliphtml5.com/jkhsr/qpfo/', '_blank');
+      window.open('https://drive.google.com/file/d/1Ja9H357DRP2tj7GdE0m6bn5hHohU1EOz/view?usp=drive_link', '_blank');
     }
 
     function showContent(id) {
@@ -110,7 +108,7 @@
 
     <script>
     function moQuyen2() {
-      window.open('https://online.fliphtml5.com/jkhsr/dpdx/', '_blank');
+      window.open('https://drive.google.com/file/d/1VqBZULeApiJhZe689yeTPWhOzBoqWL4g/view?usp=drive_link', '_blank');
     }
 
     function showContent(id) {
@@ -122,7 +120,7 @@
 
     <script>
     function moQuyen3() {
-      window.open('https://online.fliphtml5.com/jkhsr/smgn/', '_blank');
+      window.open('https://drive.google.com/file/d/1u2jCscEXWO_5PD4IaIkgjErfNc9lQJJD/view?usp=drive_link', '_blank');
     }
 
     function showContent(id) {
@@ -132,29 +130,7 @@
     }
   </script>
 
-    <script>
-    function moQuyen4() {
-      window.open('https://online.fliphtml5.com/jkhsr/euge/', '_blank');
-    }
-
-    function showContent(id) {
-      const contents = document.querySelectorAll('.content');
-      contents.forEach(c => c.style.display = 'none');
-      document.getElementById(id).style.display = 'block';
-    }
-  </script>
-
-    <script>
-    function moQuyen5() {
-      window.open('https://online.fliphtml5.com/jkhsr/cwfs/', '_blank');
-    }
-
-    function showContent(id) {
-      const contents = document.querySelectorAll('.content');
-      contents.forEach(c => c.style.display = 'none');
-      document.getElementById(id).style.display = 'block';
-    }
-  </script>
+    
 </body>
 </html>
 
